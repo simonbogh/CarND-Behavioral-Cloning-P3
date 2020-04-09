@@ -23,6 +23,16 @@ def custom_model():
 
 
 def nvidia_model():
+    """ This architecture replicates the Nvidia self-driving network architecture from https://devblogs.nvidia.com/deep-learning-self-driving-cars/.
+
+    - The input data is cropped to remove top and bottom of the images. The top and bottom of the images do not contain much relevant information i.e. trees, sky, and the front of the car.
+    - The network architecture consists of five convolutional layers. Max pooling is added after the first three convolutional layers.
+    - Finally, the neural network has three fully-connected layers of size 100, 50, and 10.
+    - The network outputs the logit directly i.e. the steering angle.
+
+    Returns:
+        Sequential() -- Returns a Keras Sequential model with a linear stack of layers.
+    """
     model = Sequential()
     model.add(Cropping2D(cropping=((50, 20), (0,0)), input_shape=(160, 320, 3)))  # , input_shape=(160,320,3)
     model.add(Lambda(lambda x: (x / 255.0) - 0.5))  # Normalize input data, , input_shape=(160, 320, 3)
