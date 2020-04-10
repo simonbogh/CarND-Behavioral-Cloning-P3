@@ -65,7 +65,7 @@ model = nvidia_model(crop_input=((50, 20), (0, 0)))
 
 print("==============================")
 print("Compiling model ..")
-model.compile(loss='mse', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='mse', optimizer='adam')
 
 print("==============================")
 print("Training model ..")
