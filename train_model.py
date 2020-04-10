@@ -83,7 +83,7 @@ model.compile(loss='mse', optimizer='adam')
 
 print("==============================")
 print("Training model ..")
-history_object = model.fit(X_train, y_train, validation_split=0.2, shuffle=True, epochs=1)
+history_object = model.fit(X_train, y_train, batch_size=32, validation_split=0.2, shuffle=True, epochs=10)
 
 with open('./trainHistory.p', 'wb') as file_pi:
     pickle.dump(history_object.history, file_pi)
