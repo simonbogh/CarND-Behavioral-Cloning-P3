@@ -15,6 +15,7 @@
 import csv
 import imageio
 import numpy as np
+import pickle
 from sklearn.utils import shuffle
 from cnn_models import lenet_model, nvidia_model
 
@@ -76,6 +77,9 @@ model.compile(loss='mse', optimizer='adam')
 print("==============================")
 print("Training model ..")
 history_object = model.fit(X_train, y_train, validation_split=0.2, shuffle=True, epochs=1)
+
+with open('./trainHistory.p', 'wb') as file_pi:
+    pickle.dump(history_object.history, file_pi)
 
 print("==============================")
 print("Saving model ..")
