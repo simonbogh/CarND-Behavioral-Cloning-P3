@@ -3,7 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=code,macos,python
 
 ### Code ###
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -143,3 +143,6 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/code,macos,python
+
+# Training data of 14.997 images
+training_data/
