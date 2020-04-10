@@ -1,0 +1,25 @@
+Bootstrap: docker
+# TF 1.15.2/2.1.0, python 3.6
+From: nvidia/tensorflow:20.03-tf2-py3
+
+Registry: nvcr.io
+IncludeCmd: yes
+
+# Quick start guide
+# http://singularity.lbl.gov/archive/docs/v2-3/bootstrap-image
+
+# %post
+# This scriptlet will be run from inside the container.
+# This is where the guts of your setup will live, including
+# making directories, and installing software and libraries.
+# For example, here we are installing yum, openMPI, and
+# other dependencies for a Centos7 bootstrap:
+%post
+    # Clone a git repo
+    # Here we are at the base, /, of the container
+    # echo "Cloning repo"
+    # git clone https://github.com/open-mpi/ompi.git
+
+    # Install Python packages
+    echo "Installing Python dependencies"
+    pip install eventlet Flask h5py imageio Keras matplotlib numpy pandas scikit-image scikit-learn scipy seaborn tornado
