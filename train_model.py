@@ -19,6 +19,13 @@ import pickle
 from sklearn.utils import shuffle
 from cnn_models import lenet_model, nvidia_model
 
+import tensorflow as tf
+import keras
+
+print("==============================")
+print("TensorFlow: ", tf.__version__)
+print("Keras: ", keras.__version__)
+
 print("==============================")
 print("Loading CSV ..")
 lines = []
