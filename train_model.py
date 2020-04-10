@@ -15,6 +15,7 @@
 import csv
 import imageio
 import numpy as np
+from sklearn.utils import shuffle
 from cnn_models import lenet_model, nvidia_model
 
 print("==============================")
@@ -57,6 +58,11 @@ for line in lines:
 #   model.fit() takes in Numpy arrays
 X_train = np.array(images)
 y_train = np.array(measurements)
+
+# Shuffle data
+#   Shuffling the data at this point to make sure 'validation_split=' in model.fit()
+#   does not only get data that is very similar.
+X_train, y_train = shuffle(X_train, y_train)
 
 print("==============================")
 print("Initializing NN model ..")
