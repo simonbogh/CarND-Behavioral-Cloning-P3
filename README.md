@@ -15,7 +15,7 @@ Different models are trained, validated and tested using Keras and TensorFlow as
 
 In the simulator the car is manually steered around a track for data collection. The image data and steering angles are used for training a neural network and then use this model to drive the car autonomously around the track.
 
-![image](video.gif "Final model controlling the self-driving car")
+![image](docs/video.gif "Final model controlling the self-driving car")
 
 ---
 ## Implementation Details
@@ -58,7 +58,7 @@ A Singularity defintion file is provided: [singularity/singularity.def](singular
 
 The Singularity image was used for training the model on an [Nvidia DGX-2](https://www.nvidia.com/en-us/data-center/dgx-2/).
 
----
+<!-- ---
 ## Creating a Great Writeup
 
 A great writeup should include the [rubric points](https://review.udacity.com/#!/rubrics/432/view) as well as your description of how you addressed each point.  You should include a detailed description of the code used (with line-number references and code snippets where necessary), and links to other supporting documents or external references.  You should include images in your writeup to demonstrate how your code works with examples.
@@ -66,7 +66,17 @@ A great writeup should include the [rubric points](https://review.udacity.com/#!
 All that said, please be concise!  We're not looking for you to write a book here, just a brief description of how you passed each rubric point, and references to the relevant code :).
 
 You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup.
+ -->
 
+---
+## Known Issues
+
+### Simulator in macOS Catalina
+If you get and error when launching the simulator for macOS Catalina, you may have to chance permission for the simulatior. In a terminal run the following command in the folder where your simulator is located.
+
+```sh
+$ chmod a+x term1_sim.app/Contents/MacOS/*
+```
 
 ---
 ## Author
