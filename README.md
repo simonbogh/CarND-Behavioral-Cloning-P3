@@ -22,7 +22,7 @@ In the simulator the car is manually steered around a track for data collection.
 
 A detailed report about the implementation can be found in [REPORT.md](REPORT.md)
 
-Below you will find a summary of the essential details about the repository, files, installation and requried dependencies. The project contains various files essential to the training and validation of the Convolutional Neural Network:
+Below you will find a summary of the essential details about the repository, files, installation and required dependencies. The project contains various files essential to the training and validation of the Convolutional Neural Network:
 
 * `model.py`: script used to create and train the model
 * `drive.py`: script to drive the car with the trained model
