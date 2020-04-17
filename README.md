@@ -26,6 +26,7 @@ Below you will find a summary of the essential details about the repository, fil
 
 * `model.py`: script used to create and train the model
 * `drive.py`: script to drive the car with the trained model
+* `cnn_models.py`: contains CNN architectures for Nvidia and Lenet
 * `models/model_nvidia_final.h5`: trained Keras model based on the Nvidia self-driving car CNN architecture
 * `video.mp4`: video of the car driving autonomously around the track for one full round
 * `Additional videos`
@@ -44,8 +45,8 @@ The following dependencies are required in order to run the training.
 
 * `TensorFlow`
 * `Keras`
-* `Additional Python packages`
-    * eventlet Flask h5py imageio Keras matplotlib numpy pandas scikit-image scikit-learn scipy seaborn tornado
+* Additional Python packages
+    * `eventlet Flask h5py imageio Keras matplotlib numpy pandas scikit-image scikit-learn scipy seaborn tornado`
 
 Installing additional dependencies
 
