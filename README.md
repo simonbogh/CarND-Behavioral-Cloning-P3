@@ -28,6 +28,7 @@ Below you will find a summary of the essential details about the repository, fil
 * `drive.py`: script to drive the car with the trained model
 * `cnn_models.py`: contains CNN architectures for Nvidia and Lenet
 * `models/model_nvidia_final.h5`: trained Keras model based on the Nvidia self-driving car CNN architecture
+* `models/model_lenet.h5`: trained Keras model based on the Lenet CNN architecture
 * `video.mp4`: video of the car driving autonomously around the track for one full round
 * `Additional videos`
     * https://youtu.be/sJuIhd6ixHE
