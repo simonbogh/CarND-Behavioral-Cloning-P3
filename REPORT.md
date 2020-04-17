@@ -133,3 +133,8 @@ I finally randomly shuffled the data set (`model.py` line 73) using `sklearn.uti
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3-5, but a training session of 50 epochs was also tried to see the evolution of the loss, which can be seen in the following graph. After 10 epochs there is not much more to gain from the current dataset and the model starts to overfit a bit.
 
 ![image](docs/loss_graph.png)
+
+---
+## Author
+
+Simon Bøgh
