@@ -1,11 +1,13 @@
 # Behavioral Cloning for a Self-Driving Car
 
 The goals of this project are the following:
-* Use the simulator to collect data of good driving behavior
+* Use the car simulator to collect data of good driving behavior
 * Build, a Convolution Neural Network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives the car around the track one full round without leaving the road
 * Summarize the results with a written report
+
+![image](docs/video.gif)
 
 
 [//]: # (Image References)
@@ -98,7 +100,7 @@ Then I implemented the Nvidia self-driving car architecture, which has more conv
 
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track, especially in areas with left turns and brown dirt on the right side of the track. To improve the driving behavior in these cases, I recorded additional data where the car was moved to the edge of the road, then the recording was started and the car was driven towards the center of the road again. This significantly improved the behavior of the car and at the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-![](docs/video.gif)
+![image](docs/video.gif)
 
 ### Final Model Architecture
 
@@ -113,6 +115,9 @@ To capture good driving behavior, I first recorded one lap on track one using ce
 ![image](docs/training_example_1.jpg)
 ![image](docs/training_example_2.jpg)
 ![image](docs/training_example_3.jpg)
+![image](docs/training_example_4.jpg)
+![image](docs/training_example_5.jpg)
+![image](docs/training_example_6.jpg)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
