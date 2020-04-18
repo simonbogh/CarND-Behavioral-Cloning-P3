@@ -110,7 +110,7 @@ The final model architecture (`cnn_model.py` lines 49-89) consisted of a convolu
 
 #### 3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded one lap on track one using center lane driving. Here is an example image of center lane driving:
+To capture good driving behavior, I first recorded one lap on track one using center lane driving. Here is are example images of center lane driving:
 
 ![image](docs/training_example_1.jpg)
 ![image](docs/training_example_2.jpg)
@@ -119,7 +119,7 @@ To capture good driving behavior, I first recorded one lap on track one using ce
 ![image](docs/training_example_5.jpg)
 ![image](docs/training_example_6.jpg)
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recover from theses situations. These images show what a recovery looks like:
 
 ![image](docs/recovery_data_1.jpg)
 ![image](docs/recovery_data_2.jpg)
